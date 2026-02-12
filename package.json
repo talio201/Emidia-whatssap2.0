@@ -1,0 +1,31 @@
+{
+  "type": "module",
+  "name": "whatsapp-backend",
+  "version": "1.0.0",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node index.js",
+    "lint": "eslint . --ext .js",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
+  },
+  "dependencies": {
+    "@wppconnect-team/wppconnect": "^1.38.0",
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "express-rate-limit": "^6.8.0",
+    "helmet": "^6.0.0",
+    "puppeteer-core": "^24.37.2",
+    "puppeteer-extra": "^3.3.6",
+    "puppeteer-extra-plugin-stealth": "^2.11.2",
+    "qrcode": "^1.5.4",
+    "whatsapp-web.js": "github:pedroslopez/whatsapp-web.js#main",
+    "ws": "^8.19.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.48.0",
+    "jest": "^30.2.0",
+    "supertest": "^7.2.2"
+  }
+}
